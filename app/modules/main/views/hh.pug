@@ -1,0 +1,35 @@
+.inner-content.full-height
+        .email-composer.container-fluid
+          .row
+            .col-md-12.no-padding
+              .wysiwyg5-wrapper.email-toolbar-wrapper
+              form#form-project(role='form' autocomplete='off')
+                .form-group-attached
+                  .row.clearfix
+                    .col-md-6
+                      .form-group.form-group-default
+                        label TO:
+                        input.form-control.tagsinput(name='to' data-role='tagsinput' type='text' value='John Smith')
+                    .col-md-6
+                      .form-group.form-group-default
+                        label CC:
+                        input.form-control(type='text' name='cc' placeholder='Add Carbon Copy')
+                  .form-group.form-group-default
+                    label Subject
+                    input.form-control(type='text' name='subject')
+              .wysiwyg5-wrapper.email-body-wrapper
+                textarea.wysiwyg.email-body(style='height:350px')
+          .row.p-b-20
+            .col-md-11.d-md-flex.d-lg-flex.d-xl-flex.d-block
+              button.btn.btn-white.btn-cons Cancel
+              button.btn.btn-complete.btn-cons.m-l-10 Send
+              .checkbox.d-inline-flex.m-l-20
+                input#sendCC(type='checkbox' value='1')
+                label.hint-text.d-none.d-lg-block(for='sendCC')
+                  | Send a 
+                  span.text-complete Carbon Copy
+                  |  CC to my Primary email address.
+                label.hhint-text.d-md-none(for='sendCC') Send me a CC
+            .col-md-1
+              button.btn.btn-complete.pull-right
+                i.pg-save
