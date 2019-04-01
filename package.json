@@ -4,7 +4,8 @@
   "description": "A quick and simple boilerplate for ExpressJs projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "npm start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "firebase": "^5.9.2",
+    "heroku": "^7.22.7",
     "method-override": "^3.0.0",
     "morgan": "^1.9.1",
     "mysql": "^2.16.0",
